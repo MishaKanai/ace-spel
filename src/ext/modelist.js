@@ -194,6 +194,7 @@ var supportedModes = {
     Soy_Template:["soy"],
     Space:       ["space"],
     SPARQL:      ["rq"],
+    SPEL:        ["spel"],
     SQL:         ["sql"],
     SQLServer:   ["sqlserver"],
     Stylus:      ["styl|stylus"],
