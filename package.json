@@ -41,7 +41,6 @@
         "lint": "eslint \"src/**/*.js\"",
         "fix": "eslint --fix \"src/**/*.js\"",
         "changelog": "standard-version",
-        "preinstall": "npm install --ignore-scripts",
         "postinstall": "node Makefile.dryice.js full --target ../ace-builds"
     },
     "standard-version": {
