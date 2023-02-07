@@ -45,8 +45,13 @@ exports.loadScript = function(path, callback) {
 exports.qualifyURL = function(_url) {
     var maybeServerContextRoot = window.__SERVER_CTXT_ROOT || '';
     var urlWithRoot = maybeServerContextRoot + _url;
-    var url = urlWithRoot.startsWith('/') ? urlWithRoot : ('/' + urlWithRoot);
+    var url = urlWithRoot.startsWith('/') || urlWithRoot.startsWith('http') ? urlWithRoot : ('/' + urlWithRoot);
     var a = document.createElement('a');
     a.href = url;
+    console.log({
+        maybeServerContextRoot,
+        'a.href': a.href,
+        _url
+    })
     return a.href;
 };
