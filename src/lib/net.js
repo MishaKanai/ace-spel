@@ -42,7 +42,10 @@ exports.loadScript = function(path, callback) {
  * Convert a url into a fully qualified absolute URL
  * This function does not work in IE6
  */
-exports.qualifyURL = function(url) {
+exports.qualifyURL = function(_url) {
+    var maybeServerContextRoot = window.__SERVER_CTXT_ROOT || '';
+    var urlWithRoot = maybeServerContextRoot + _url;
+    var url = urlWithRoot.startsWith('/') ? urlWithRoot : ('/' + urlWithRoot);
     var a = document.createElement('a');
     a.href = url;
     return a.href;
