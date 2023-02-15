@@ -41,7 +41,7 @@
         "lint": "eslint \"src/**/*.js\"",
         "fix": "eslint --fix \"src/**/*.js\"",
         "changelog": "standard-version",
-        "postinstall": "node Makefile.dryice.js full --target ../ace-builds"
+        "postinstall": "node Makefile.dryice.js full --target ../@ace-spel/ace-builds"
     },
     "standard-version": {
         "skip": {
