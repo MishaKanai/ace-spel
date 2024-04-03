@@ -10,7 +10,7 @@ var JavaScriptHighlightRules = function(options) {
         "variable.language":
             "#this|#root",
         "keyword":
-            "matches|between",
+            "matches|between|and|AND|or|OR",
         "constant.language":
             "null",
         "constant.language.boolean": "true|false"
@@ -101,9 +101,6 @@ var JavaScriptHighlightRules = function(options) {
                 // from "module-path" (this is the only case where 'from' should be a keyword)
                 token : "keyword",
                 regex : "from(?=\\s*('|\"))"
-            }, {
-                token : "support.constant",
-                regex : /that\b/
             }, {
                 token : ["storage.type", "punctuation.operator", "support.function.firebug"],
                 regex : /(console)(\.)(warn|info|log|error|time|trace|timeEnd|assert)\b/
