@@ -5,9 +5,6 @@ const path = require('path');
 const packageJsonContent = {
   name: "@ace-spel",
   version: "0.0.1",
-  exports: {
-    ".*": "./ace-builds/src-noconflict/*.js"
-  }
 };
 
 // Function to write package.json to the specified file path
