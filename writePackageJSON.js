@@ -3,8 +3,8 @@ const path = require('path');
 
 // Example package.json content
 const packageJsonContent = {
-  name: "@ace-spel",
-  version: "0.0.1",
+  name: "@ace-spel/ace-builds",
+  version: "0.0.1"
 };
 
 // Function to write package.json to the specified file path
