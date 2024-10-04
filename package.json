@@ -30,6 +30,7 @@
     "license": "BSD-3-Clause",
     "files": [
         "lib",
+        "writePackageJSON.js",
         "Makefile.dryice.js",
         "src",
         "ace.d.ts",
