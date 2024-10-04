@@ -29,6 +29,7 @@
     },
     "license": "BSD-3-Clause",
     "files": [
+        "Makefile.dryice.js",
         "src",
         "ace.d.ts",
         "!**/*_test.js",
